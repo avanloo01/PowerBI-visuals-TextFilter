@@ -225,13 +225,8 @@ export class Visual implements IVisual {
       if (!isBlank) {
         // Split the text on "OR" and trim any extra spaces
         const values = text.split("OR").map(value => value.trim());
-        // Create the conditions list
-        const conditions = values.map(value => ({
-            operator: "Contains",
-           value: value
-        }));
-          
-        filter = new AdvancedFilter(target, "Or", conditions);
+        
+        filter = new AdvancedFilter(target, "Or", values.map(value => ({operator: "Contains",value:value})));
 
         action = FilterAction.merge;
       }
