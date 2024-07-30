@@ -2,7 +2,7 @@
   "visual": {
     "name": "textFilter",
     "displayName": "Text Filter with OR",
-    "guid": "textFilter25A4896A83E0487089E2B90C9AE57C8A",
+    "guid": "textFilterWithOR",
     "visualClassName": "Visual",
     "version": "1",
     "description": "Provides a search box that can be placed anywhere in your dashboard. This adds a text filtering capability for quick searching across your data. Place 'OR' between search terms to search different terms at the same time.",
