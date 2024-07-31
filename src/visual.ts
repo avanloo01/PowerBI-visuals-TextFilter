@@ -223,9 +223,14 @@ export class Visual implements IVisual {
       let action = FilterAction.remove;
       
       if (!isBlank) {
+        let values: string[] = [];
         // Split the text on "OR" and trim any extra spaces
-        const values = text.split("OR").map(value => value.trim());
-        
+        if(text.includes("OR")){
+          values = text.split("OR").map(value => value.trim());
+        }
+        else {
+          values = [text];
+        }
         filter = new AdvancedFilter(target, "Or", values.map(value => ({operator: "Contains",value:value})));
 
         action = FilterAction.merge;
