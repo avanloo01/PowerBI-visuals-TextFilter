@@ -1,14 +1,14 @@
 {
-		"version": "2.2.9.0",
-		"author": {"name":"Microsoft","email":"pbicvsupport@microsoft.com"},
+		"version": "1.0.0.0",
+		"author": {"name":"Arthur Van Loo","email":"arthur@vanloo.biz"},
 		"resources": [
 			{
 				"resourceId": "rId0",
 				"sourceType": 5,
-				"file": "resources/textFilter25A4896A83E0487089E2B90C9AE57C8A.pbiviz.json"
+				"file": "resources/textFilterWithOR.pbiviz.json"
 			}
 		],
-		"visual": {"name":"textFilter","displayName":"Text Filter with OR","guid":"textFilter25A4896A83E0487089E2B90C9AE57C8A","visualClassName":"Visual","version":"2.2.9.0","description":"Provides a search box that can be placed anywhere in your dashboard. This adds a text filtering capability for quick searching across your data. Place 'OR' between search terms to search different terms at the same time.","supportUrl":"https://community.powerbi.com","gitHubUrl":"https://github.com/avanloo01/PowerBI-visuals-TextFilter"},
+		"visual": {"name":"textFilter","displayName":"Text Filter with OR","guid":"textFilterWithOR","visualClassName":"Visual","version":"1.0.0.0","description":"Provides a search box that can be placed anywhere in your dashboard. This adds a text filtering capability for quick searching across your data. Place 'OR' between search terms to search different terms at the same time.","supportUrl":"https://community.powerbi.com","gitHubUrl":"https://github.com/avanloo01/PowerBI-visuals-TextFilter"},
 		"metadata": {
 			"pbivizjson": {
 				"resourceId": "rId0"

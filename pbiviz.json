@@ -4,7 +4,7 @@
     "displayName": "Text Filter with OR",
     "guid": "textFilterWithOR",
     "visualClassName": "Visual",
-    "version": "1",
+    "version": "1.0.0.0",
     "description": "Provides a search box that can be placed anywhere in your dashboard. This adds a text filtering capability for quick searching across your data. Place 'OR' between search terms to search different terms at the same time.",
     "supportUrl": "https://community.powerbi.com",
     "gitHubUrl": "https://github.com/avanloo01/PowerBI-visuals-TextFilter"
