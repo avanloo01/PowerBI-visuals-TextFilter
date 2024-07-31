@@ -9,7 +9,7 @@ yarn-error.log*
 .tmp
 
 # Output
-dist
+# dist
 
 # Runtime data
 pids
