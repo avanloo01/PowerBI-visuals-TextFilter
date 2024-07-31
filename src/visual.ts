@@ -223,16 +223,15 @@ export class Visual implements IVisual {
       let action = FilterAction.remove;
       
       if (!isBlank) {
-        let values: string[] = [];
         // Split the text on "OR" and trim any extra spaces
         if(text.includes("OR")){
-          values = text.split("OR").map(value => value.trim());
+          let values = text.split("OR").map(value => value.trim());
+          filter = new AdvancedFilter(target, "Or", values.map(value => ({ operator: "Contains", value: value })));
         }
         else {
-          values = [text];
+          filter = new AdvancedFilter(target, "And", {operator:"Contains", value:text});
         }
-        filter = new AdvancedFilter(target, "Or", values.map(value => ({operator: "Contains",value:value})));
-
+        
         action = FilterAction.merge;
       }
       this.host.applyJsonFilter(filter, "general", "filter", action);
